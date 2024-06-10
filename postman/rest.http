@@ -1,12 +1,12 @@
-@url_dev =  http://localhost:8080
+@url_dev =  http://localhost:8080/api/v1
 ### GET ALL POST
-GET {{url_dev}}/api/v1/posts
+GET {{url_dev}}/posts
 
 ### GET A SINGLE POST
-GET {{url_dev}}/api/v1/posts/1
+GET {{url_dev}}/posts/1
 
 ### CREARE A NEW POST
-POST {{url_dev}}/api/v1/posts
+POST {{url_dev}}/posts
 Content-Type: application/json
 
 {
@@ -14,9 +14,9 @@ Content-Type: application/json
     "content": "content 7"
 }
 
-###UPDATE A POST
+### UPDATE A POST
 
-PATCH {{url_dev}}/api/v1/posts/5
+PATCH {{url_dev}}/posts/5
 Content-Type: application/json
 
 {
@@ -25,4 +25,5 @@ Content-Type: application/json
 }
 
 ### DELETE A POST
-DELETE {{url_dev}}/api/v1/posts/6
+DELETE {{url_dev}}/posts/6
+

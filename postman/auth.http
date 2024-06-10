@@ -1,0 +1,19 @@
+@url_dev =  http://localhost:8080/api/v1
+#REGISTER
+POST {{url_dev}}/auth/register
+Content-Type: application/json
+
+{
+    "email": "test3@gmail.com",
+    "password": "123",
+    "name": "test3"
+}
+
+# LOGIN
+POST {{url_dev}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "test3@gmail.com",
+    "password": "123"
+}

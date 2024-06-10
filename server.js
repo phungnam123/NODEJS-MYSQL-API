@@ -5,6 +5,7 @@ const morgan = require('morgan')
 // const bodyParser = require('body-parser')
 
 const postsRoutes = require('./routes/post.router')
+const authRoutes = require('./routes/auth.router')
 
 const app = express()
 
@@ -17,6 +18,7 @@ app.use(helmet())
 
 // routes
 app.use('/api/v1/posts', postsRoutes)
+app.use('/api/v1/auth', authRoutes)
 
 const PORT = process.env.PORT || 8000
 
